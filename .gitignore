@@ -7,3 +7,4 @@ dataset/.cache
 logs
 model_learn_tokenizer
 official_model
+examples/data_preprocess/*_data

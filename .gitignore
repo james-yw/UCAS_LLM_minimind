@@ -1,0 +1,9 @@
+model/__pycache__
+out
+website/
+docs-minimind/
+dataset/*.jsonl
+dataset/.cache
+logs
+model_learn_tokenizer
+official_model

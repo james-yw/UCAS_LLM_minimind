@@ -17,7 +17,7 @@ os.makedirs(BASE_OUTPUT, exist_ok=True)
 
 # 1. 基础过滤流 (清理脏数据)
 filter_pipeline = [
-    JsonlReader(data_folder="./examples/data_preprocess/", glob_pattern=INPUT_FILE),
+    JsonlReader(data_folder="./examples/data_preprocess/raw_data", glob_pattern=INPUT_FILE),
     LanguageFilter(languages=["en"], language_threshold=0.8), # 确保是英文
     GopherQualityFilter(),                 # 剔除低质量页面
     C4QualityFilter(),                     # 进一步精炼
